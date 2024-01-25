@@ -35,10 +35,14 @@ function evaluateUserInput(e) {
             break
         }
         case subtraction: {
-            calcResult = lhf - rhs; 
+            calcResult = lhs - rhs; 
             break;
         }
         case division: {
+            if(rhs === 0) {
+                calcResult = "You can't divide by zero bro"
+                break
+            }
             calcResult = lhs / rhs
             break
         }
@@ -49,5 +53,5 @@ function evaluateUserInput(e) {
         default: 
             break; 
     }
-    result.innerText = `${calcResult.toFixed(5)}`
+    result.innerText = `${calcResult}`
 }
