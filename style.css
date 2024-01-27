@@ -269,6 +269,8 @@ body {
 
 .error {
     color: red;
+    text-align: center;
+    margin-top: 12px;
 }
 
 .input-container {
